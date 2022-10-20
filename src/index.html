@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Payee</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  	<!-- Bootstrap 4.1.3-->
+	<link rel="stylesheet" href="assets/vendor_components/bootstrap/css/bootstrap.css">
+	
+	<!-- Bootstrap-extend-->
+	<link rel="stylesheet" href="assets/css/bootstrap-extend.css">
+	
+	<!-- font awesome -->
+	<link rel="stylesheet" href="assets/vendor_components/font-awesome/css/font-awesome.css">
+	
+	<!-- ionicons -->
+	<link rel="stylesheet" href="assets/vendor_components/Ionicons/css/ionicons.css">
+	
+	<!-- theme style -->
+	<link rel="stylesheet" href="assets/css/master_style.css">
+	
+	<link rel="stylesheet" href="assets/css/skins/_all-skins.css">
+	  <!--alerts CSS -->
+	  <link href="../../assets/vendor_components/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+	<!-- jvectormap -->
+	<link rel="stylesheet" href="assets/vendor_components/jvectormap/jquery-jvectormap.css">
+	
+	<!-- Morris charts -->
+	<link rel="stylesheet" href="assets/vendor_components/morris.js/morris.css">
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script data-require="angular.js@1.5.x" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js" data-semver="1.5.11"></script>
+    <script src="app.js"></script>
+
+	
+</head>
+<body class="">
+
+  <app-root></app-root>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+  <!-- scroll bottom to  top  -->
+  <script>
+	$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 50) {
+            $(".header").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".header").removeClass("active");
+        }
+    });
+});
+  </script>
+
+
+  <script>
+	// Get the button
+	let mybutton = document.getElementById("myBtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+
+ <!-- sidebar  menu -->
+
+ <script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "285px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+  </script>
+  <!-- end sidbar menu -->
+
+
+
+    <script type="text/javascript">
+      $(function () {
+
+        $(".font-button").bind("click", function () {
+          var size = parseInt($('body,td').css("font-size"));
+          if ($(this).hasClass("plus")) {
+            size = size + 2;
+          } else {
+            size = size - 2;
+            if (size <= 10) {
+              size = 10;
+            }
+          }
+          $('body, td').css("font-size", size);
+        });
+
+      });
+    </script>
+
+
+
+  
+
+  <!-- end scrool bottom to top -->
+  
+	<!-- jQuery 3 -->
+	<script src="assets/vendor_components/jquery-3.3.1/jquery-3.3.1.js"></script>
+	<!-- Bootstrap 4.1.3-->
+	<script src="assets/vendor_components/bootstrap/js/bootstrap.js"></script>	
+
+	<!-- Sparkline -->
+	<script src="assets/vendor_components/jquery-sparkline/dist/jquery.sparkline.js"></script>
+	
+	<!-- jvectormap -->
+	<script src="assets/vendor_plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>	
+	<script src="assets/vendor_plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>	
+
+	<!-- Slimscroll -->
+	<script src="assets/vendor_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+	
+	<!-- FastClick -->
+	<script src="assets/vendor_components/fastclick/lib/fastclick.js"></script>
+
+	<!-- Minimal-art Admin App -->
+	<script src="assets/js/template.js"></script>
+
+	<!-- Minimal-art Admin for demo purposes -->
+	<script src="assets/js/demo.js"></script>
+		
+	
+</body >
+</html>

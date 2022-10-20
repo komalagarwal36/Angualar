@@ -1,0 +1,196 @@
+<!-- Content Wrapper. Contains page content -->
+<app-header></app-header>
+<!-- <app-sidebar></app-sidebar> -->
+<div _ngcontent-usv-c162="" class="col-12 m-0 p-0">
+	<nav _ngcontent-usv-c162="" aria-label="breadcrumb">
+		<ol _ngcontent-usv-c162="" class="breadcrumb">
+			<li _ngcontent-usv-c162="" class="breadcrumb-item"> <i _ngcontent-usv-c162="" class="fa text-primary fa-home" style="font-size:19px"></i>&nbsp; <a _ngcontent-usv-c162="" routerlink="/login" ng-reflect-router-link="/login" href="/login">Login</a> </li>
+			<li _ngcontent-usv-c162="" class="breadcrumb-item"> <a _ngcontent-usv-c162="" routerlink="/main" ng-reflect-router-link="/main" href="/main">Menu</a> </li>
+			<li _ngcontent-usv-c162="" aria-current="Inbox" aria-label="Current Page" class="breadcrumb-item active">Employee Preview</li>
+		</ol>
+	</nav>
+	<div class="content-wrapper ">
+		<section class="content">
+			<div class="container">
+				<!-- Basic Forms -->
+				<div class="box box-default">
+					<div class="box-header with-border">
+						<div class="Row" style="padding-top: 10px;">
+							<label class="p-5 bg-light-blue" style=" font-weight: bold;">
+								<div class="section-title">
+									<p>Employee Basic Information</p>
+								</div>
+							</label>
+							<hr> </div>
+						<div>
+							<form>
+								<div class="row">
+									<div class="col-md-3 col-12">
+										<p class="text-bold">JanAadhar ID</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for=""> {{PayeePrevdata.janAadharId}}</label>
+									</div>
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Select Employee</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.memberId}}</label>
+									</div>
+								</div>
+								<hr>
+								<div class="row mt-2">
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Empolyee Type</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.employeeType}}</label>
+									</div>
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Service Gategory</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.serviceCategoryId}}</label>
+									</div>
+								</div>
+								<hr>
+								<!-- /.col 2-->
+								<div class="row mt-2">
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Sub Service Gategory / Code</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.subServiceCategory}}</label>
+									</div>
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Employee Name</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.empName}}</label>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Employee Name हिंदी</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.nameHnd}}</label>
+									</div>
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Father Name</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.fname}}</label>
+									</div>
+								</div>
+								<hr>
+								<!-- /.col 3-->
+								<div class="row mt-2">
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Mother Name</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.mname}}</label>
+									</div>
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Appointment Order No.</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.appomentOrderNo}}</label>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Date of Birth</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.dob}}</label>
+									</div>
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Mobile Number</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.mobile}}</label>
+									</div>
+								</div>
+								<hr>
+								<!-- /.col -->
+								<!-- /.col 4-->
+								<div class="row mt-2">
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Addhar Number</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.aadhaar}}</label>
+									</div>
+								</div>
+								<hr>
+								<!-- /.col -->
+								<div class="Row" style="padding-top: 20px;">
+									<label class="p-5 bg-light-blue" style=" font-weight: bold;">
+										<div class="section-title">
+											<p>BANK DETAILS</p>
+										</div>
+									</label>
+									<hr> </div>
+								<!-- /.col 4-->
+								<div class="row mt-2">
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Bank Account Number</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.bank.bankAccNo}}</label>
+									</div>
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Ifsc Code</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.bank.ifscCode}}</label>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Bank Name</p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.bank.bankName}}</label>
+									</div>
+									<div class="col-md-3 col-12">
+										<p class="text-bold">Branch Name </p>
+									</div>
+									<div class="col-md-3 col-12">
+										<label for="">{{PayeePrevdata.bank.branchName}}</label>
+									</div>
+								</div>
+								<!--  ffffffffffff -->
+								<div class="Row" style="padding-top: 20px;">
+									<label class="p-5 bg-light-blue" style=" font-weight: bold;">
+										<div class="section-title">
+											<p>DOCUMENT</p>
+										</div>
+									</label>
+									<hr> </div>
+								<div class="row mt-2">
+									<div class="col-md-6 col-12">
+										<label for="">Descripation</label>
+										<input type="text" class="form-control" placeholder="Descripation"> </div>
+									<div class="col-md-6 col-12">
+										<label for="">Ulode Document</label>
+										<input type="text" class="form-control" placeholder="Ulode Document"> </div>
+								</div>
+								<div class="mt-3" style="margin-top: 15px !important">
+									<button type="button" class="btn btn-primary mr-3">Back</button>
+									<button type="button" class="btn btn-warning">Print</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- /.box -->
+			</div>
+		</section>
+	</div>
+	<app-footer></app-footer>
